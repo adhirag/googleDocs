@@ -23,7 +23,7 @@ export default function BasicModal({title}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
+  const url='https://docs-b596f.web.app/'
   return (
     <div>
         <div style={{display:'flex',flexDirection:'row'}} onClick={handleOpen}><div>Share</div></div>
@@ -40,32 +40,32 @@ export default function BasicModal({title}) {
           </Typography>
           <div style={{display:'flex',flexDirection:'row'}}>
     <div style={{paddingRight:'10px'}}>  <FacebookShareButton
-    // url={url}
+    url={url}
    
     hashtag="#programing joke">
     <FacebookIcon logoFillColor="white" size={40} />
 </FacebookShareButton>
 </div>
 <div style={{paddingRight:'10px'}}><EmailShareButton
-    // url={url}
+    url={url}
    
     hashtag="#programing joke">
     <EmailIcon logoFillColor="white" size={40} />
 </EmailShareButton></div>
 <div style={{paddingRight:'10px'}}><LinkedinShareButton
-    // url={url}
+    url={url}
    
     hashtag="#programing joke">
     <LinkedinIcon logoFillColor="white" size={40} />
 </LinkedinShareButton></div>
 <div style={{paddingRight:'10px'}}><WhatsappShareButton
-    // url={url}
+    url={url}
    
     hashtag="#programing joke">
     <WhatsappIcon logoFillColor="white" size={40} />
 </WhatsappShareButton></div>
 <div style={{paddingRight:'10px'}}><TwitterShareButton
-    // url={url}
+    url={url}
    
     hashtag="#programing joke">
     <TwitterIcon logoFillColor="white" size={40} />
@@ -73,7 +73,7 @@ export default function BasicModal({title}) {
 
 </div>
 <div style={{paddingRight:'10px'}}><TelegramShareButton
-    // url={url}
+    url={url}
    
     hashtag="#programing joke">
     <TelegramIcon logoFillColor="white" size={40} />
